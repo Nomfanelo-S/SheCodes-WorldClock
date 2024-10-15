@@ -4,52 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/worldclock.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>World Clock</title>
   </head>
   <body>
     <div class="container">
-      <h1>World Clock</h1>
-      <select>
-        <option value="">Select a City</option>
-        <option value="Accra">Accra</option>
-        <option value="Cape Town">Cape Town</option>
-        <option value="Luanda">Luanda</option>
-        <option value="Lusaka">Lusaka</option>
-        <option value="Nairobi">Nairobi</option>
-      </select>
-      <div class="city">
-        <h2>New York</h2>
-        <div class="date">October 15, 2024</div>
-        <div class="time">10:15 UTC</div>
+      <div class="video-background">
+        <video autoplay muted loop>
+          <source src="src/worldclock.mp4" type="video/mp4" />
+          Your browser does not support the video tag
+        </video>
+
+        <h1>World Clock</h1>
+        <select class="select-city" id="select-city">
+          <option value="">Select a City</option>
+          <option value="Accra">Accra</option>
+          <option value="Cape Town">Cape Town</option>
+          <option value="Luanda">Luanda</option>
+          <option value="Lusaka">Lusaka</option>
+          <option value="Nairobi">Nairobi</option>
+        </select>
+        <div class="city">
+          <div class="city-date">
+            <h2>New York</h2>
+            <div class="date">October 15, 2024</div>
+          </div>
+
+          <div class="time">10:15 UTC</div>
+        </div>
+
+        <div class="city">
+          <div class="city-date">
+            <h2>London</h2>
+            <div class="date">October 15, 2024</div>
+          </div>
+
+          <div class="time">10:15 UTC</div>
+        </div>
+
+        <div class="city">
+          <div class="city-date">
+            <h2>Mumbai</h2>
+            <div class="date">October 15, 2024</div>
+          </div>
+
+          <div class="time">10:15 UTC</div>
+        </div>
+        <div class="city">
+          <div class="city-date">
+            <h2>Osaka</h2>
+            <div class="date">October 15, 2024</div>
+          </div>
+
+          <div class="time">10:15 UTC</div>
+        </div>
       </div>
 
-      <div class="city">
-        <h2>London</h2>
-        <div class="date">October 15, 2024</div>
-        <div class="time">10:15 UTC</div>
-      </div>
-
-      <div class="city">
-        <h2>Mumbai</h2>
-        <div class="date">October 15, 2024</div>
-        <div class="time">10:15 UTC</div>
-      </div>
-      <div class="city">
-        <h2>Osaka</h2>
-        <div class="date">October 15, 2024</div>
-        <div class="time">10:15 UTC</div>
-      </div>
-</div>
-
-<br>
-      <footer>
-        Project coded by
-        <a href="https://github.com/Nomfanelo-S">Nomfanelo Skhosana</a> and it's
-        on
-        <a href="https://github.com/Nomfanelo-S/SheCodes-WorldClock">Github</a>
-        hosted on <a href="https://worldclocknk.netlify.app">Netlify</a>
-      </footer>
+      <br />
     </div>
+    <footer>
+      Project coded by
+      <a href="https://github.com/Nomfanelo-S">Nomfanelo Skhosana</a> and it's
+      on
+      <a href="https://github.com/Nomfanelo-S/SheCodes-WorldClock">Github</a>
+      hosted on <a href="https://worldclocknk.netlify.app">Netlify</a>
+    </footer>
+    <br />
   </body>
   <script src="src/worldclock.js"></script>
 </html>
