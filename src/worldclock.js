@@ -41,9 +41,6 @@ function updateClock() {
     fijiTimeElement.innerHTML = fijiTime.format("H:mm:ss [<small>]A[</small>]");
   }
 }
-updateClock();
-setInterval(updateClock, 1000);
-
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   let cityName = cityTimeZone.split("/")[1];
@@ -60,6 +57,8 @@ function updateCity(event) {
               )}</div>
             </div>`;
 }
+updateClock();
+setInterval(updateClock, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
