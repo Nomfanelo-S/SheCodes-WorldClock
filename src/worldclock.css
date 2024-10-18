@@ -72,9 +72,12 @@
   position: relative;
   top: 25px;
 }
+.homepage {
+  text-decoration: none;
+}
 
 h1 {
-  color: black;
+  color: rgb(12, 12, 12);
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 25px;
@@ -82,6 +85,7 @@ h1 {
   text-align: center;
   border-radius: 25px;
   padding: 5px 10px;
+  text-decoration: none;
 }
 select {
   font-family: "Cinzel", serif;
